@@ -8,7 +8,6 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-500: oklch(63.7% 0.237 25.331);
     --spacing: 0.25rem;
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
@@ -197,27 +196,51 @@
       max-width: 96rem;
     }
   }
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
+  }
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
+  }
   .row {
     display: flex;
     align-items: center;
   }
+  .flex {
+    display: flex;
+  }
   .hidden {
     display: none;
+  }
+  .w-full {
+    width: 100%;
+  }
+  .flex-col {
+    flex-direction: column;
   }
   .justify-between {
     justify-content: space-between;
   }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
+  }
+  .gap-16 {
+    gap: calc(var(--spacing) * 16);
   }
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
+  .border-\[\#C3C6D7\] {
+    border-color: #C3C6D7;
+  }
+  .bg-\[\#C3C6D7\] {
+    background-color: #C3C6D7;
+  }
   .bg-primary {
     background-color: var(--color-primary);
-  }
-  .bg-red-500 {
-    background-color: var(--color-red-500);
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
@@ -225,8 +248,17 @@
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
+  .px-8 {
+    padding-inline: calc(var(--spacing) * 8);
+  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
+  }
+  .py-6 {
+    padding-block: calc(var(--spacing) * 6);
+  }
+  .pl-10 {
+    padding-left: calc(var(--spacing) * 10);
   }
   .logo {
     font-family: var(--font-Inter);
@@ -234,6 +266,21 @@
     line-height: var(--tw-leading, var(--text-2xl--line-height));
     --tw-leading: 33.6px;
     line-height: 33.6px;
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .paragraph {
+    font-family: var(--font-Inter);
+    --tw-leading: 25.6px;
+    line-height: 25.6px;
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
+    color: #434655;
+  }
+  .font-Inter {
+    font-family: var(--font-Inter);
+  }
+  .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
@@ -251,12 +298,31 @@
   .text-\[\#FFFFFF\] {
     color: #FFFFFF;
   }
+  .text-primary {
+    color: var(--color-primary);
+  }
   .transition-all {
     transition-property: all;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
   @media (hover: hover) {
+    .hover\:bg-primary\/30:hover {
+      background-color: color-mix(in srgb, #004AC6 30%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-primary\/30:hover {
+        background-color: color-mix(in oklab, var(--color-primary) 30%, transparent);
+      }
+    }
+    .hover\:bg-primary\/90:hover {
+      background-color: color-mix(in srgb, #004AC6 90%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-primary\/90:hover {
+        background-color: color-mix(in oklab, var(--color-primary) 90%, transparent);
+      }
+    }
     .hover\:text-primary:hover {
       color: var(--color-primary);
     }
@@ -297,15 +363,51 @@
       padding-inline: calc(var(--spacing) * 6);
     }
   }
+  h1 {
+    font-size: 3rem;
+    font-family: "Inter";
+    font-weight: 600;
+    line-height: 3.6rem;
+  }
+  h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.1rem;
+  }
+  button {
+    cursor: pointer;
+  }
 }
 @layer components {
   .nav-link {
+    display: inline-block;
     font-family: var(--font-Inter);
     --tw-leading: 25.6px;
     line-height: 25.6px;
     --tw-font-weight: var(--font-weight-normal);
     font-weight: var(--font-weight-normal);
     color: #434655;
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 120%;
+        --tw-scale-y: 120%;
+        --tw-scale-z: 120%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-primary);
+      }
+    }
   }
   .nav-link-active {
     border-bottom-style: var(--tw-border-style);
@@ -313,7 +415,7 @@
     color: var(--color-primary);
   }
   .header {
-    position: fixed;
+    position: sticky;
     top: 0px;
     z-index: 99;
     width: 100%;
@@ -330,6 +432,21 @@
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
+}
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
 }
 @property --tw-border-style {
   syntax: "*";
@@ -406,6 +523,9 @@
     *, ::before, ::after, ::backdrop {
       --tw-leading: initial;
       --tw-font-weight: initial;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-scale-z: 1;
       --tw-border-style: solid;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
