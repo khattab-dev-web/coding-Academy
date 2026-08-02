@@ -4,14 +4,29 @@
 @layer base {
     .container {
         @apply mx-auto;
-        @apply px-4;
+        @apply px-2;
         @apply md:px-6;
     }
     h1{
-        font-size: 3rem;
+        font-size: 2rem;
         font-family: "Inter";
         font-weight: 600;
-        line-height: 3.6rem;
+        line-height: 2rem;
+
+   @variant md{
+    
+     font-size:1.75rem;
+     font-family: "Inter";
+     font-weight: 600;
+     line-height: 3rem;
+   }     
+   @variant lg{
+    
+     font-size: 3rem;
+     font-family: "Inter";
+     font-weight: 600;
+     line-height: 3.6rem;
+   }     
      
     }
     h2{
@@ -32,7 +47,9 @@
 @theme {
     --font-Inter: 'Inter';
     --color-primary: #004AC6;
-    --breakpoint-xs: 320px;
+    --breakpoint-xs: 319px;
+    /* --breakpoint-xm: 769px; */
+
 }
 
 @utility row {
@@ -59,10 +76,11 @@
 
 /*=== end header section === */
 
+
 /*=== start Hero section === */
 
 body{
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 @utility paragraph{
     @apply text-[#434655] font-Inter font-normal leading-[25.6px];

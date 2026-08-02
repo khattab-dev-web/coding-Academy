@@ -50,23 +50,39 @@
 
     <main>
         <section class="hero">
-            <div class="container row gap-16">
-                <div class="mt-20 flex flex-col gap-4">
+            <div class="container row gap-5 md:gap-16 flex-col md:flex-row">
+                <div class="mt-12 md:mt-20 flex flex-col gap-4 max-xm:text-center max-xm:items-center">
                     <h1 class="">Master the Art of <span class="text-primary">Coding</span></h1>
                     <p class="paragraph">Accelerate your career with project-based learning, world-class
                         mentors, and a curriculum designed by industry experts. Join
                         50,000+ students worldwide.</p>
                     <div class="buttons row gap-4">
-                        <button class="bg-primary py-6 px-8 rounded-lg text-[#FFFFFF] font-bold hover:bg-primary/90">Browse Courses</button>
-                        <button
-                        class="bg-[#C3C6D7] border-[#C3C6D7] py-6 px-8 text-primary rounded-lg font-Inter font-bold hover:bg-primary/30 transition-all">View Learning Paths</button>
+                        <butto class="bg-primary py-5 md:py-5 px-8 rounded-lg text-[#FFFFFF] font-bold hover:bg-primary/90  active:scale-90">Browse
+                            Courses</butto>
+                        <button class="bg-[#C3C6D7] border-[#C3C6D7] py-2 sm:py-5 px-6 text-primary rounded-lg font-Inter md:font-bold hover:bg-primary/30 transition-all active:scale-90">
+                            <a href="./courses.html">View Learning Paths</a>
+                           </button>
                     </div>
                 </div>
-                <div class="w-full mt-8 pl-10">
-                    <img src="./public/Background+Shadow.png" alt="Hero Photo" />
+            
+                <div class="w-full max-md:w-[90%] mt-8 flex justify-end">
+                    <img src="./images/hero/Background+Shadow.png" alt="Hero Photo" />
                 </div>
             </div>
 
+            <div>
+                <div class="container row gap-4">
+                    <div class="images row -space-x-3.5">
+                        <img src="./images/hero/ImageC.webp" class="w-10 h-10 rounded-[50%]" alt="hero photo small section">
+                        <img src="./images/hero/ImageB.webp" class="w-10 h-10 rounded-[50%] border-solid border border-[#F8F9FF]" alt="hero photo small section">
+                        <img src="./images/hero/ImageA.webp" class="w-10 h-10 rounded-[50%]  border-solid border border-[#F8F9FF]" alt="hero photo small section">
+
+                    </div>
+                    <div>
+                     <p class="paragraph leading-5.25 text-sm ">Trusted by 50,000+ developers</p>
+                    </div>
+                    </div>
+                    </div>
         </section>
 
     </main>
