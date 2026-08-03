@@ -14,7 +14,6 @@
         line-height: 2rem;
 
    @variant md{
-    
      font-size:1.75rem;
      font-family: "Inter";
      font-weight: 600;
@@ -35,8 +34,8 @@
         line-height: 2.6rem;
     }
     h3{
-        font-size: 1.5rem;
-        font-weight: 400;
+        font-size: 1.125rem;
+        font-weight: 500;
         line-height: 2.1rem;
     }
     button{
@@ -47,6 +46,7 @@
 @theme {
     --font-Inter: 'Inter';
     --color-primary: #004AC6;
+    --color-background: #EFF4FF;
     --breakpoint-xs: 319px;
     /* --breakpoint-xm: 769px; */
 
@@ -83,7 +83,7 @@ body{
     overflow-x: hidden;
 }
 @utility paragraph{
-    @apply text-[#434655] font-Inter font-normal leading-[25.6px];
+    @apply text-[#434655] font-Inter font-normal leading-5.5;
 }
 
 
