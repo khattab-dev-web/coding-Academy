@@ -16,7 +16,7 @@
 <body>
 
     <header class="header">
-        <div class="container row justify-between">
+        <div class="container row justify-between max-md:w-7xl ">
             <div class="logo max-xs:font-medium xs:text-xl md:text-2xl">
                 <a href="index.html">Coding Academy</a>
             </div>
@@ -145,7 +145,7 @@
     <!-- العنوان -->
     <div class="flex justify-between items-center mb-8">
       <div>
-        <h2 class="text-3xl font-bold">Curated Learning Paths</h2>
+        <h2 class="md:text-3xl font-bold max-md:text-xl">Curated Learning Paths</h2>
         <p class="text-gray-600 mt-2">
           Structured roadmaps from zero to hireable.
         </p>
@@ -278,14 +278,14 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       
       <!-- Card 1 -->
-      <div class="bg-white rounded-xl shadow-sm border border-background flex flex-col justify-between p-4 w-full">
+<div class="bg-white rounded-xl shadow-sm border border-background flex flex-col justify-between w-full group">
         <div>
           <!-- Image -->
           <div class="w-full rounded-t-lg  mb-4">
-            <img src="./images/Featured Courses/next js.webp" alt="Next.js Course" class="w-full  rounded-t-lg " />
+            <img src="./images/Featured Courses/next.js.webp" alt="Next.js Course" class="w-full  rounded-t-lg " />
           </div>
-
-          <div class="flex items-center justify-between mb-3">
+<div class="container px-4">
+       <div class="flex items-center justify-between mb-3">
             <span class="bg-background text-primary font-semibold px-2.5 py-1 rounded">ADVANCED</span>
             <p class="paragraph">42 Hours</p>
           </div>
@@ -295,23 +295,28 @@
           <p class="paragraph mb-6">Master server components and optimization.</p>
         </div>
 
-        <!-- Button -->
-        <a href="#" class="inline-block w-full text-center bg-[#DCE9FF] hover:text-white font-semibold text-sm py-2.5 rounded-lg transition-colors hover:bg-primary">
+ 
+        
+</div>
+          <!-- Button -->
+         <div class="px-4 mb-4">
+            <a href="#" class="inline-block w-full text-center bg-[#DCE9FF] font-semibold text-sm py-2.5 rounded-lg group-hover:bg-primary group-hover:text-white transition-all">
           Learn More
         </a>
+    </div>
       </div>
 
     <!-- card 2 -->
-      <div class="bg-white w-full rounded-xl shadow-sm border border-background flex flex-col justify-between p-4">
+        <div class="bg-white rounded-xl shadow-sm border border-background flex flex-col justify-between  w-full group">
         <div>
           <!-- Image -->
-          <div class="w-full rounded-t-lg  mb-4">
-            <img src="./images/Featured Courses/paython.webp" alt="Next.js Course" class="w-full h-full  rounded-t-lg " />
+          <div class="w-full rounded-t-lg mb-4">
+            <img src="./images/Featured Courses/paython.webp" alt="paython Course" class="w-full  rounded-t-lg " />
           </div>
-
-          <div class="flex items-center justify-between mb-3 gap-1">
-        <span class="bg-background text-[#6A1EDB] font-semibold px-2.5 py-1 rounded ">INTERMEDIATE</span>
-            <p class="paragraph pl-2">35 Hours</p>
+<div class="container px-4">
+       <div class="flex items-center justify-between mb-3">
+            <span class="bg-[#6A1EDB1A] text-[#6A1EDB] font-semibold px-2.5 py-1 rounded">Mid-Level</span>
+            <p class="paragraph">35 Hours</p>
           </div>
 
           
@@ -319,58 +324,74 @@
           <p class="paragraph mb-6">Analyze complex datasets with Pandas and NumPy.</p>
         </div>
 
-        <!-- Button -->
-        <a href="#" class="inline-block w-full text-center bg-[#DCE9FF] hover:text-white font-semibold text-sm py-2.5 rounded-lg hover:bg-primary">
+    
+        
+</div>
+       <!-- Button -->
+         <div class="px-4 mb-4">
+            <a href="#" class="inline-block w-full text-center bg-[#DCE9FF] font-semibold text-sm py-2.5 rounded-lg group-hover:bg-primary group-hover:text-white transition-all">
           Learn More
         </a>
+    </div>
       </div>
-
+      
 <!-- card 3 -->
- <div class="bg-white w-full rounded-xl shadow-sm border border-background flex flex-col justify-between p-4">
+    <div class="bg-white rounded-xl shadow-sm border border-background flex flex-col justify-between  w-full group">
         <div>
           <!-- Image -->
           <div class="w-full rounded-t-lg  mb-4">
-            <img src="./images/Featured Courses/cloud.webp" alt="Next.js Course" class="w-full h-full  rounded-t-lg " />
+            <img src="./images/Featured Courses/cloud.webp" alt="cloudCourse" class="w-full  rounded-t-lg " />
           </div>
-
-          <div class="flex items-center justify-between mb-3 gap-1">
-        <span class="bg-[#6A1EDB1A] text-primary font-semibold px-2.5 py-1 rounded ">ADVANCED</span>
-            <p class="paragraph">50 Hours</p>
+<div class="container px-4">
+       <div class="flex items-center justify-between mb-3">
+            <span class="bg-background text-primary font-semibold px-2.5 py-1 rounded">ADVANCED</span>
+            <p class="paragraph">50Hours</p>
           </div>
 
           
           <h3 class="font-bold mb-1">Cloud Architecture</h3>
-          <p class="paragraph mb-6">Scaling systems on AWS and Kubernetes.</p>
+          <p class="paragraph mb-6">Scaling systems on AWS and
+Kubernetes.</p>
         </div>
 
-        <!-- Button -->
-        <a href="#" class="inline-block w-full text-center bg-[#DCE9FF] hover:text-white font-semibold text-sm py-2.5 rounded-lg hover:bg-primary">
+     
+      
+        
+</div>
+      <!-- Button -->
+      <div class="px-4 mb-4">
+            <a href="#" class="inline-block w-full text-center bg-[#DCE9FF] font-semibold text-sm py-2.5 rounded-lg group-hover:bg-primary group-hover:text-white transition-all">
           Learn More
-        </a>
+        </a></div>
       </div>
 
       <!-- card 4 -->
-       <div class="bg-white w-full rounded-xl shadow-sm border border-background flex flex-col justify-between p-4">
+        <div class="bg-white rounded-xl shadow-sm border border-background flex flex-col justify-between  w-full group">
         <div>
           <!-- Image -->
           <div class="w-full rounded-t-lg  mb-4">
-            <img src="./images/Featured Courses/cloud.webp" alt="Next.js Course" class="w-full h-full  rounded-t-lg " />
+            <img src="./images/Featured Courses/systems programing.webp" alt="systems programming Course" class="w-full  rounded-t-lg " />
           </div>
-
-          <div class="flex items-center justify-between mb-3 gap-1">
-        <span class="bg-[#FFDAD6] text-[#BA1A1A] font-semibold px-2.5 py-1 rounded ">EXPERT</span>
-            <p class="paragraph">60 Hours</p>
+<div class="container px-4">
+       <div class="flex items-center justify-between mb-3">
+            <span class="bg-[#FFDAD6] text-[#BA1A1A] font-semibold px-2.5 py-1 rounded">EXPERT</span>
+            <p class="paragraph">42 Hours</p>
           </div>
 
           
           <h3 class="font-bold mb-1">Systems Programming</h3>
-          <p class="paragraph mb-6">Mastering memory management Rust.</p>
+          <p class="paragraph mb-6">Mastering memory management and Rust.</p>
         </div>
 
-        <!-- Button -->
-        <a href="#" class="inline-block w-full text-center bg-[#DCE9FF] hover:text-white font-semibold text-sm py-2.5 rounded-lg hover:bg-primary">
+    
+        
+</div>
+       <!-- Button -->
+         <div class="px-4 mb-4">
+            <a href="#" class="inline-block w-full text-center bg-[#DCE9FF] font-semibold text-sm py-2.5 rounded-lg group-hover:bg-primary group-hover:text-white transition-all">
           Learn More
         </a>
+    </div>
       </div>
     </div>
   </div>
@@ -378,6 +399,103 @@
 
 <!-- End Featured courses section -->
 
+
+<!-- Start success section -->
+<section class="mt-16 row flex-col  ">
+   
+       <div class="text-center items-center justify-center py-5">
+    <h2 class="py-3.75">Success Stories</h2>
+    <p class="paragraph">Hear from our students who are now building the future.</p>
+  </div>
+
+  <div class="container pb-1.25 grid grid-cols-1 lg:grid-cols-3 gap-7 mt-8">
+
+<!-- card alex -->
+ <div class="card shadow bg-[#FFFFFF] rounded-lg mb-3.75 py-7 hover:scale-105 border border-[#C3C6D7] inset-shadow-sm px-8">
+<div class="mb-3.75">
+    <img src="./images/Success Stories section/Icon succses.svg" alt="Icon success" />
+</div>
+<div class="mb-8">
+    <p class="paragraph italic">"The project-based curriculum was
+exactly what I needed. I went from
+knowing basic HTML to landing a
+frontend role at a major tech firm in 6
+months."</p>
+</div>
+<div class="row gap-2">
+    <div>
+        <img src="./images/Success Stories section/Alex.jpg" class="w-7 h-7 rounded-[50%]" alt="Alex">
+    </div>
+    <div>
+        <h4 class="font-semibold text-sm">Alex Rivera</h4>
+        <p class="paragraph text-xs">Frontend Developer @ TechCorp</p>
+    </div>
+</div>
+
+ </div>
+<!-- card sarah -->
+  <div class="card shadow bg-[#FFFFFF] rounded-lg mb-3.75 py-7 hover:scale-105 border border-[#C3C6D7] inset-shadow-sm px-8">
+<div class="mb-3.75">
+    <img src="./images/Success Stories section/Icon succses.svg" alt="Icon success" />
+</div>
+<div class="mb-8">
+    <p class="paragraph italic">"Coding Academy's mentors are world-
+class. Having my code reviewed by
+senior engineers from Google was an
+absolute game-changer."</p>
+</div>
+<div class="row gap-2">
+    <div>
+        <img src="./images/Success Stories section/sarah.jpg" class="w-7 h-7 rounded-[50%]" alt="Alex">
+    </div>
+    <div>
+        <h4 class="font-semibold text-sm">Sarah Chen</h4>
+        <p class="paragraph text-xs">Backend Engineer @ DataFlow</p>
+    </div>
+</div>
+
+ </div>
+<!-- card Marcus -->
+  <div class="card shadow bg-[#FFFFFF] rounded-lg mb-3.75 py-7 hover:scale-105 border border-[#C3C6D7] inset-shadow-sm px-8">
+<div class="mb-3.75">
+    <img src="./images/Success Stories section/Icon succses.svg" alt="Icon success" />
+</div>
+<div class="mb-8">
+    <p class="paragraph italic">"The community here is incredible. I
+found my co-founder and built my first
+startup through the Academy. It's more
+than just a school."</p>
+</div>
+<div class="row gap-2">
+    <div>
+        <img src="./images/Success Stories section/Lose.jpg" class="w-7 h-7 rounded-[50%]" alt="Alex">
+    </div>
+    <div>
+        <h4 class="font-semibold text-sm">Marcus Throne</h4>
+        <p class="paragraph text-xs">Founder @ DevLaunch</p>
+    </div>
+</div>
+
+ </div>
+</section>
+
+    <!-- <div class="shadow bg-[#FFFFFF] rounded-lg mb-3.75 py-7 hover:scale-105 border border-[#C3C6D7] inset-shadow-sm ">
+
+      <div class="top-3 left-6.25">
+        <img src="./images/Success Stories section/Icon succses.svg" class="w-5 h-5" alt="Icon succses" />
+      </div>
+      <div class="py-4 px-3">
+        
+        <p class="paragraph">"The project-based curriculum was exactly what I needed. I went from knowing basic HTML to landing a frontend role at a major tech firm in 6 months."</p>
+        <div class="mt-8 row gap-3">
+            <img src="./images/Success Stories section/Alex.jpg" class="w-10 h-10 rounded-[50%]" alt="">
+            <h4>Alex Rivera</h4>
+                <p class="paragraph">Frontend Developer @ TechCorp</p>
+        </div>
+
+    </div>
+  </div>  -->
+  </div> 
     </main>
 
 </body>

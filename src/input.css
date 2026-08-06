@@ -48,7 +48,7 @@
     --color-primary: #004AC6;
     --color-background: #EFF4FF;
     --breakpoint-xs: 319px;
-    /* --breakpoint-xm: 769px; */
+   
 
 }
 
@@ -79,13 +79,14 @@
 
 /*=== start Hero section === */
 
-body{
-    overflow-x: hidden;
+ body{
+    overflow-x: hidden; 
 }
 @utility paragraph{
-    @apply text-[#434655] font-Inter font-normal leading-5.5;
+    @apply text-[#434655] font-Inter font-normal leading-6;
 }
 
 /*=== end Hero section === */
 
 /* Featured courses section */
+
