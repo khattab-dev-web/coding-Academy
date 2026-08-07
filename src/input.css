@@ -41,6 +41,9 @@
     button{
         cursor: pointer;
     }
+    input{
+        outline: none;
+    }
 }
 
 @theme {
@@ -88,5 +91,8 @@
 
 /*=== end Hero section === */
 
-/* Featured courses section */
+/* footer index */
+@utility form{
+    @apply placeholder:text-gray-500 shadow border-[#C3C6D7] bg-[#FFFFFF] py-2.5 px-4 rounded-lg;
+}
 
