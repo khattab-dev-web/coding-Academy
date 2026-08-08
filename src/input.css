@@ -69,7 +69,7 @@
     }
 
     .nav-link-active {
-        @apply text-primary border-b-2;
+        @apply text-primary border-b-2 font-semibold;
     }
 
     .header {
@@ -95,4 +95,17 @@
 @utility form{
     @apply placeholder:text-gray-500 shadow border-[#C3C6D7] bg-[#FFFFFF] py-2.5 px-4 rounded-lg;
 }
+
+/* corses page */
+@utility span{
+    @apply font-Inter font-semibold text-primary leading-3 text-xs tracking-[1.2px];  
+}
+@utility button-primary{
+
+     @apply font-Inter font-semibold text-[#FFFFFF] bg-primary py-2 px-6 leading-3 text-xs rounded-full  hover:bg-primary/30 transition-all active:scale-90;
+
+}
+    
+ 
+
 
