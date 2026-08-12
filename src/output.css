@@ -412,6 +412,9 @@
   .h-4 {
     height: calc(var(--spacing) * 4);
   }
+  .h-5 {
+    height: calc(var(--spacing) * 5);
+  }
   .h-7 {
     height: calc(var(--spacing) * 7);
   }
@@ -426,6 +429,12 @@
   }
   .h-\[4\] {
     height: 4;
+  }
+  .h-\[20\] {
+    height: 20;
+  }
+  .h-\[20px\] {
+    height: 20px;
   }
   .h-\[427\] {
     height: 427;
@@ -447,6 +456,9 @@
   }
   .w-4 {
     width: calc(var(--spacing) * 4);
+  }
+  .w-4\.5 {
+    width: calc(var(--spacing) * 4.5);
   }
   .w-7 {
     width: calc(var(--spacing) * 7);
@@ -484,11 +496,17 @@
   .w-190\.5 {
     width: calc(var(--spacing) * 190.5);
   }
+  .w-\[1\] {
+    width: 1;
+  }
   .w-\[6\] {
     width: 6;
   }
   .w-\[7\] {
     width: 7;
+  }
+  .w-\[18px\] {
+    width: 18px;
   }
   .w-\[65\] {
     width: 65;
@@ -1211,6 +1229,19 @@
       --tw-scale-y: 105%;
       --tw-scale-z: 105%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+    .hover\:border:hover {
+      border-style: var(--tw-border-style);
+      border-width: 1px;
+    }
+    .hover\:border-\[pra\]:hover {
+      border-color: pra;
+    }
+    .hover\:border-\[praimar\]:hover {
+      border-color: praimar;
+    }
+    .hover\:border-primary:hover {
+      border-color: var(--color-primary);
     }
     .hover\:bg-background:hover {
       background-color: var(--color-background);
