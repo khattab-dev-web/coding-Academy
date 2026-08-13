@@ -8,7 +8,9 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-600: oklch(57.7% 0.245 27.325);
     --color-red-700: oklch(50.5% 0.213 27.518);
+    --color-green-600: oklch(62.7% 0.194 149.214);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-500: oklch(55.1% 0.027 264.364);
@@ -213,6 +215,9 @@
   .left-6\.25 {
     left: calc(var(--spacing) * 6.25);
   }
+  .col-span-1 {
+    grid-column: span 1 / span 1;
+  }
   .col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -221,6 +226,9 @@
   }
   .col-span-7 {
     grid-column: span 7 / span 7;
+  }
+  .col-span-full {
+    grid-column: 1 / -1;
   }
   .col-start-1 {
     grid-column-start: 1;
@@ -1246,6 +1254,9 @@
     .hover\:bg-background:hover {
       background-color: var(--color-background);
     }
+    .hover\:bg-green-600:hover {
+      background-color: var(--color-green-600);
+    }
     .hover\:bg-primary:hover {
       background-color: var(--color-primary);
     }
@@ -1272,6 +1283,9 @@
       .hover\:bg-primary\/90:hover {
         background-color: color-mix(in oklab, var(--color-primary) 90%, transparent);
       }
+    }
+    .hover\:bg-red-600:hover {
+      background-color: var(--color-red-600);
     }
     .hover\:text-\[\#FFFFFF\]:hover {
       color: #FFFFFF;
@@ -1373,6 +1387,12 @@
     }
   }
   @media (width >= 48rem) {
+    .md\:col-span-1 {
+      grid-column: span 1 / span 1;
+    }
+    .md\:col-span-3 {
+      grid-column: span 3 / span 3;
+    }
     .md\:mt-17\.5 {
       margin-top: calc(var(--spacing) * 17.5);
     }
@@ -1397,8 +1417,14 @@
     .md\:gap-16 {
       gap: calc(var(--spacing) * 16);
     }
+    .md\:px-6\.25 {
+      padding-inline: calc(var(--spacing) * 6.25);
+    }
     .md\:py-5 {
       padding-block: calc(var(--spacing) * 5);
+    }
+    .md\:py-6\.25 {
+      padding-block: calc(var(--spacing) * 6.25);
     }
     .md\:text-2xl {
       font-size: var(--text-2xl);
