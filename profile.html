@@ -49,69 +49,143 @@
     </header>
 
     <!-- main -->
-    
-      <main class="px-4">
-  <div class="big border border-[#C3C6D7] shadow rounded-lg w-full max-w-130 mx-auto my-6 sm:my-11">
-    <div class="py-6 sm:py-8">
 
-      <!-- Profile Header -->
-      <div class="flex flex-col items-center justify-center gap-1 text-center">
-        <img src="./images/profile-page/profile-image.webp" alt="profile image" class="w-20 h-20 object-cover" />
-        <h2 class="text-[#0B1C30] text-xl font-semibold mt-2">Alex Johnson</h2>
-        <span class="bg-background text-primary py-1 px-3 rounded-lg text-sm">Student</span>
-      </div>
+    <main class="px-4">
+        <div class="big border border-[#C3C6D7] shadow rounded-lg w-full max-w-130 mx-auto my-6 sm:my-11">
+            <div class="py-6 sm:py-8">
 
-      <!-- Border Divider -->
-      <div class="h-px bg-[#C3C6D7] mx-4 sm:mx-6 my-6"></div>
+                <!-- Profile Header -->
+                <div class="flex flex-col items-center justify-center gap-1 text-center">
+                    <img src="./images/profile-page/profile-image.webp" alt="profile image"
+                        class="w-20 h-20 object-cover" />
+                    <h2 class="text-[#0B1C30] text-xl font-semibold mt-2">Alex Johnson</h2>
+                    <span class="bg-background text-primary py-1 px-3 rounded-lg text-sm">Student</span>
+                </div>
 
-      <!-- Paragraph -->
-      <div class="px-4 sm:px-8">
-        <p class="w-full text-center text-sm sm:text-base text-gray-600">
-          Passionate learner focused on mastering full-stack development and cloud architecture. Currently exploring React ecosystems and serverless technologies.
-        </p>
-      </div>
+                <!-- Border Divider -->
+                <div class="h-px bg-[#C3C6D7] mx-4 sm:mx-6 my-6"></div>
 
-      <!-- Form -->
-      <div class="px-4 sm:px-8 mt-8">
-        <form action="">
-          
-          <!-- Input 1: Email -->
-          <div class="relative flex items-center bg-background border border-[#C3C6D7] rounded-lg shadow px-4 py-2 w-full">
-            <img src="./images/profile-page/Email-icon.webp" class="w-5 h-5 mr-3 flex-shrink-0" alt="Email-icon" />
-            <div class="flex flex-col w-full">
-              <label for="email" class="text-[#737686] mb-1 text-xs">
-                Email Address
-              </label>
-              <input id="email" type="email" name="email" placeholder="alex.johnson@example.com"
-                class="placeholder-black w-full bg-background text-sm text-gray-800 font-medium focus:outline-none" />
+                <!-- Paragraph -->
+                <div class="px-4 sm:px-8">
+                    <p class="w-full text-center text-sm sm:text-base text-gray-600">
+                        Passionate learner focused on mastering full-stack development and cloud architecture. Currently
+                        exploring React ecosystems and serverless technologies.
+                    </p>
+                </div>
+
+                <!-- Form -->
+                <div class="px-4 sm:px-8 mt-8">
+                    <form action="">
+
+                        <!-- Input 1: Email -->
+                        <div
+                            class="relative flex items-center bg-background border border-[#C3C6D7] rounded-lg shadow px-4 py-2 w-full">
+                            <img src="./images/profile-page/Email-icon.webp" class="w-5 h-5 mr-3 flex-shrink-0"
+                                alt="Email-icon" />
+                            <div class="flex flex-col w-full">
+                                <label for="email" class="text-[#737686] mb-1 text-xs">
+                                    Email Address
+                                </label>
+                                <input id="email" type="email" name="email" placeholder="alex.johnson@example.com"
+                                    class="placeholder-black w-full bg-background text-sm text-gray-800 font-medium focus:outline-none" />
+                            </div>
+                        </div>
+
+                        <!-- Input 2: Phone -->
+                        <div
+                            class="relative flex items-center bg-background border border-[#C3C6D7] rounded-lg shadow px-4 py-2 mt-3 w-full">
+                            <img src="./images/profile-page/phone-icon.webp" class="w-5 h-5 mr-3" alt="phone-icon" />
+                            <div class="flex flex-col w-full">
+                                <label for="phone" class="text-[#737686] mb-1 text-xs">
+                                    Phone Number
+                                </label>
+                                <input id="phone" type="tel" name="phone" placeholder="+1 (555) 000-0000"
+                                    class="placeholder-black w-full bg-background text-sm text-gray-800 font-medium focus:outline-none" />
+                            </div>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="mt-8">
+                            <button type="submit"
+                                class="bg-primary text-[#FFFFFF] py-3 sm:py-4 w-full hover:bg-primary/80 rounded-lg transition-colors font-medium">
+                                Edit Profile
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+
             </div>
-          </div>
+        </div>
+    </main>
 
-          <!-- Input 2: Phone -->
-          <div class="relative flex items-center bg-background border border-[#C3C6D7] rounded-lg shadow px-4 py-2 mt-3 w-full">
-            <img src="./images/profile-page/phone-icon.webp" class="w-5 h-5 mr-3" alt="phone-icon" />
-            <div class="flex flex-col w-full">
-              <label for="phone" class="text-[#737686] mb-1 text-xs">
-                Phone Number
-              </label>
-              <input id="phone" type="tel" name="phone" placeholder="+1 (555) 000-0000"
-                class="placeholder-black w-full bg-background text-sm text-gray-800 font-medium focus:outline-none" />
+    <!-- footer -->
+    <footer>
+        <section class="bg-background overflow-hidden mx-auto mt-16">
+            <div class="container grid lg:grid-cols-4 grid-cols-1 my-15 gap-8">
+
+                <div>
+                    <h2 class="text-[24px] pb-4">Coding Academy</h2>
+                    <p class="paragraph max-w-75">Building the next generation of
+                        engineers with high-fidelity education
+                        and a global community.</p>
+
+
+                    <div class="row gap-4 mt-4">
+                        <img src="./images/public/global-icon.png" alt="global-icon" />
+                        <img src="./images/public/Link-icon.webp" alt="link-icon" />
+                    </div>
+                </div>
+
+                <div class="platform">
+                    <div class="mb-6">
+                        <h3 class="text-primary">Platform</h3>
+                    </div>
+                    <div class="cursor-pointer">
+                        <p class="paragraph hover:text-primary transition-all">Courses</p>
+                        <p class="paragraph hover:text-primary transition-all">Learning Paths</p>
+                        <p class="paragraph hover:text-primary transition-all">Instructors</p>
+                        <p class="paragraph hover:text-primary transition-all">Enterprise</p>
+
+                    </div>
+
+                </div>
+
+                <div class="Company">
+                    <div class="mb-6">
+                        <h3 class="text-primary">Company</h3>
+                    </div>
+                    <div class="cursor-pointer">
+                        <p class="paragraph hover:text-primary transition-all">Careers</p>
+                        <p class="paragraph hover:text-primary transition-all">Privacy Policy</p>
+                        <p class="paragraph hover:text-primary transition-all">Terms of Service</p>
+                        <p class="paragraph hover:text-primary transition-all">Enterprise</p>
+
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3 class="pb-4 text-primary">Newsletter</h3>
+                        <p class="paragraph">Get the latest news and coding tips.</p>
+                    </div>
+                    <div>
+                        <form class="row mt-4 gap-4" name="Email">
+                            <input type="email" class="form" placeholder="Email" name="Email">
+                            <button class="py-2.25 px-4 bg-primary rounded-lg font-Inter text-[#FFFFFF]">Join</button>
+                        </form>
+                    </div>
+
+                </div>
             </div>
-          </div>
 
-          <!-- Button -->
-          <div class="mt-8">
-            <button type="submit" class="bg-primary text-[#FFFFFF] py-3 sm:py-4 w-full hover:bg-primary/80 rounded-lg transition-colors font-medium">
-              Edit Profile
-            </button>
-          </div>
+            <div class="container border-t border-[#C3C6D74D]">
+                <div class="text-center mt-8 py-6 ">
+                    <p class="paragraph text-[#434655B2]">© 2024 Coding Academy. All rights reserved.</p>
+                </div>
+            </div>
 
-        </form>
-      </div>
-
-    </div>
-  </div>
-</main>
+        </section>
+    </footer>
 
 
 </body>
