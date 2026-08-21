@@ -111,6 +111,8 @@
     @apply font-Inter font-semibold text-[12px] leading-3 text-[#434655] uppercase;
 }
     
- 
-
+ /* lesson view */
+@utility span{
+    @apply bg-background text-primary py-0.75 px-0.5 border-background rounded-sm;
+}
 
